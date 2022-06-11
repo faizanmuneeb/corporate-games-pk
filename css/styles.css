@@ -3,6 +3,7 @@
 :root {
   --white: #ffffff;
   --black: #222;
+  --black-2: #1b1a18;
   --primary: #fa471c;
 }
 
@@ -147,4 +148,66 @@ body {
 .main-slider .slider-arrow.next-arrow {
   right: 0;
   transform: translate(-40px, -16px) rotate(180deg) skew(360deg, 0deg);
+}
+
+.main-footer {
+  background-color: var(--black-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white);
+  padding: 82px 120px 66px;
+}
+
+.main-footer h4 {
+  font-size: 20px;
+}
+
+.main-footer .social-icons-container .social-icon-container {
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 5px;
+  width: 24px;
+  height: 25px;
+  font-size: 15px;
+  line-height: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+.main-footer .social-icons-container .social-icon-container:hover {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}
+
+.footer-pages-links {
+  margin-top: 48px !important;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-pages-links li {
+  display: inline-block;
+  margin: 0 6px 0 0 !important;
+  padding: 0 10px 0 0 !important;
+  font-size: 12px;
+  border-right: 1px solid #fff;
+  line-height: 11px;
+}
+
+.footer-pages-links li:last-child {
+  border-right: none;
+}
+
+.footer-pages-links a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-pages-links a:hover {
+  color: var(--primary);
 }
