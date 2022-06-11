@@ -1,0 +1,150 @@
+/* ROOT */
+
+:root {
+  --white: #ffffff;
+  --black: #222;
+  --primary: #fa471c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100vw;
+}
+
+/* PARALLAX */
+
+.first-parallax {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("http://orig12.deviantart.net/60e8/f/2012/335/6/e/battlefield_4___wallpaper_by_muusedesign-d5mq2bp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.second-parallax {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("http://www.wallpapers4u.org/wp-content/uploads/battlefield_4_game_explosion_ea_digital_illusions_ce_92996_1920x1080.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header.active {
+  background-color: #ffffffeb;
+}
+
+.main-header .main-logo {
+  padding: 5px 40px 0;
+}
+
+.main-header .header-right-section {
+  padding: 5px 40px 0;
+}
+
+.main-header .header-right-section .brochure-button {
+  background: var(--primary);
+  color: #ffffff;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 1.125em;
+}
+
+.main-header .header-right-section .brochure-button:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.main-header.active .header-right-section .brochure-button {
+  color: var(--black);
+}
+
+.main-header .header-right-section .phone-number {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.main-header.active .header-right-section .phone-number {
+  color: var(--black);
+}
+
+.main-header .header-right-section .social-icon-container {
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 5px;
+  width: 24px;
+  height: 25px;
+  font-size: 15px;
+  line-height: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-header.active .header-right-section .social-icon-container {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.main-header .header-right-section .social-icon-container:hover {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}
+
+/* MAIN SLIDER */
+
+.main-slider {
+  position: relative;
+}
+.main-slider .slider-image {
+  width: 100%;
+}
+
+.main-slider .slider-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  filter: invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg)
+    brightness(104%) contrast(104%);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.main-slider .slider-arrow:hover {
+  filter: invert(36%) sepia(47%) saturate(3583%) hue-rotate(349deg)
+    brightness(98%) contrast(101%);
+}
+
+.main-slider .slider-arrow.prev-arrow {
+  left: 0;
+  transform: translate(40px, -16px);
+}
+
+.main-slider .slider-arrow.next-arrow {
+  right: 0;
+  transform: translate(-40px, -16px) rotate(180deg) skew(360deg, 0deg);
+}
