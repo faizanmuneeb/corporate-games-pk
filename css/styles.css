@@ -13,6 +13,42 @@ body {
   overflow-x: hidden;
   height: 100%;
   width: 100vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button {
+  background: var(--primary);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.move-to-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 18px;
+  font-size: 12px;
+  display: none;
+  overflow: hidden;
+}
+
+.move-to-top-button:hover span {
+  animation: 0.1s ease-in both running move-top-keyframe;
+  position: relative;
+}
+
+@keyframes move-top-keyframe {
+  0% {
+    bottom: 0px;
+  }
+  99% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 
 /* PARALLAX */
@@ -63,11 +99,9 @@ body {
 }
 
 .main-header .header-right-section .brochure-button {
-  background: var(--primary);
   color: #ffffff;
   padding: calc(0.667em + 2px) calc(1.333em + 2px);
   border-radius: 9999px;
-  cursor: pointer;
   box-shadow: none;
   font-size: 1.125em;
 }
