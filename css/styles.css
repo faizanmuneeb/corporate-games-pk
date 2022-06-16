@@ -39,8 +39,16 @@ p a {
   transition: color 0.2s ease-out;
 }
 
-a:hover, p a:hover {
+a:hover,
+p a:hover {
   color: var(--primary);
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -207,11 +215,41 @@ a:hover, p a:hover {
 .first-parallax {
   height: 90vh;
   width: 100vw;
-  background-image: url("http://orig12.deviantart.net/60e8/f/2012/335/6/e/battlefield_4___wallpaper_by_muusedesign-d5mq2bp.jpg");
+  background-image: url("https://www.corporategamesuk.com/wp-content/uploads/2021/03/5-wrKlid-scaled.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
+}
+.first-parallax .grid-section {
+  border-bottom: none;
+  background-color: transparent;
+  margin: 0;
+  margin-left: auto;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.first-parallax .grid-section p,
+.first-parallax .grid-section ul {
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.first-parallax .section-background-3 {
+  background-image: url("https://759067.smushcdn.com/2258139/wp-content/uploads/2021/04/h1-background-image-1-copy.png?lossy=0&strip=1&webp=1");
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+  background-size: cover;
+  height: 90vh;
+  width: 70vw;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .second-parallax {
@@ -258,10 +296,11 @@ a:hover, p a:hover {
 }
 
 .main-header .header-right-section .brochure-button:hover {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.main-header.active .header-right-section .brochure-button {
+.main-header.active .header-right-section .brochure-button,
+.main-header.active .header-right-section .brochure-button:hover {
   color: var(--black);
 }
 
