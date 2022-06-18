@@ -78,8 +78,17 @@ ul {
   background: var(--primary);
   border-radius: 6px;
   color: var(--white);
-  padding: 10px;
+  padding: 14px 20px;
   cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  color: var(--white);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .move-to-top-button {
