@@ -1,5 +1,28 @@
 /* ROOT */
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../font/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../font/Montserrat-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Universe";
+  src: url("./../font/Univers-LT-47-CondensedLt-Bold-Italic.ttf");
+}
+
 :root {
   --white: #ffffff;
   --black: #222;
@@ -95,7 +118,7 @@ ul {
   font-size: 40px;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2em;
 }
 
@@ -126,6 +149,10 @@ ul {
 
 .box-section.box-content-section-1 {
   width: 80%;
+}
+
+.box-section h2 strong {
+  font-family: "universe";
 }
 
 .img-box-container-1 {
